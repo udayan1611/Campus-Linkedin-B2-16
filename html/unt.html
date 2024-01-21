@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus linkedin</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077B5;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #0077B5;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .connections {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0077B5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .img2{
+            margin-left: -1100px;
+        }
+        .banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)),url(https://www.onlinemanipal.com/wp-content/uploads/2023/03/002-Institute-MUJ-1.jpg);
+    background-size:cover;
+    background-position:center;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="profile">
+            <img src="DN-2393-2PP.jpg" alt="Profile Picture" width="100" height="100">
+            <div class="profile-info">
+                <h2>Udayan Tripathi</h2>
+                <p>Web Developer</p>
+                <p>Location: Jaipur, Rajasthan, India</p>
+            </div>
+        </div>
+
+        <div class="connections">
+            <p>Connections: 500+</p>
+            <button id="btn"onclick="connect()"onclick="change()"value="Connect">Connect</button>
+            <script>
+                
+                const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function handleClick() {
+  btn.textContent = 'Request sent';
+  btn.style.backgroundColor = 'salmon';
+  btn.style.color = 'white';
+});
+            </script>
+        </div>
+    </section>
+
+    <script>
+        function connect() {
+            alert("Connection request sent!");
+        }
+    </script>
+    <div>
+        <section>
+            <div class="profile">
+                <img src="WhatsApp Image 2024-01-20 at 10.23.28 AM.jpeg" alt="Profile Picture" width="100" height="100">
+                <div class="profile-info">
+                    <h2>Parv Baweja</h2>
+                    <p>Hacker</p>
+                    <p>Location: Jaipur, Rajasthan, India</p>
+                </div>
+            </div>
+    
+            <div class="connections">
+                <p>Connections: 750+</p>
+                <button id="btn1"onclick="connect()"onclick="change()"value="Connect">Connect</button>
+                <script>
+                    const btn1 = document.getElementById('btn1');
+    
+    btn1.addEventListener('click', function handleClick() {
+      btn1.textContent = 'Request sent';
+      btn1.style.backgroundColor = 'salmon';
+  btn1.style.color = 'white';
+    });
+                </script>
+            </div>
+        </section>
+    
+        <script>
+            function connect() {
+                alert("Connection request sent!");
+            }
+        </script>
+    
+    </div>
+    <div>
+        <section>
+            <div class="profile">
+                <img src="WhatsApp Image 2024-01-20 at 10.27.18 AM.jpeg" alt="Profile Picture" width="100" height="100">
+                <div class="profile-info">
+                    <h2>Sparsh Rawat</h2>
+                    <p>Blockchain Developer</p>
+                    <p>Location: Jaipur, Rajasthan, India</p>
+                </div>
+            </div>
+    
+            <div class="connections">
+                <p>Connections: 750+</p>
+                <button id="btn2"onclick="connect()"onclick="change()"value="Connect">Connect</button>
+            <script>
+                const btn2 = document.getElementById('btn2');
+
+btn2.addEventListener('click', function handleClick() {
+  btn2.textContent = 'Request sent';
+  btn2.style.backgroundColor = 'salmon';
+  btn2.style.color = 'white';
+});
+            </script>
+   
+            </div>
+        </section>
+    
+        <script>
+            function connect() {
+                alert("Connection request sent!");
+            }
+        </script>
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJconnect</title>
+    <link rel="icon" href="handshake.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        defer></script>
+    <script src="https://kit.fontawesome.com/86348c2231.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"
+        defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="file:///Users/udayan/Desktop/campus%20linkedin/html/index.html">MUJconnect</a>
+        <div id="logout" class="logout navbar-nav">
+            <a id="logout-btn" class="nav-link float-right" href="file:///Users/udayan/Desktop/campus%20linkedin/html/index.html" >Logout</a>
+        </div>
+        <i id="toggler" class="fa fa-bars"></i>
+    </nav>
+
+    <div id="logout-left" class="logout navbar-nav bg-dark left100">
+        <a id="logout-left-btn" class="nav-link" href="file:///Users/udayan/Desktop/campus%20linkedin/html/index.html">Logout</a>
+    </div>
+
+    <aside id="sidebar" class="bg-dark right100">
+        <i id="right-arrow" class="fas fa-arrow-circle-right"></i>
+        <h4 id="filter-heading">Filters</h4>
+        <h3 id="sidebar-heading"><i class="fas fa-filter"></i> Filters</h3>
+        <form action="">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="webdev" name="filters">
+                <label class="custom-control-label" for="webdev">Web Dev</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="python" name="filters">
+                <label class="custom-control-label" for="python">Python</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="psychology" name="filters">
+                <label class="custom-control-label" for="psychology">Psychology</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="devops" name="filters">
+                <label class="custom-control-label" for="devops">Devops</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="gamedevelopment" name="filters">
+                <label class="custom-control-label" for="gamedevelopment">Game Development</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="java" name="filters">
+                <label class="custom-control-label" for="java">Java</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="networking" name="filters">
+                <label class="custom-control-label" for="networking">Networking</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="datastructures" name="filters">
+                <label class="custom-control-label" for="datastructures">Data Structures</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="programming" name="filters">
+                <label class="custom-control-label" for="programming">Programming</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="shell" name="filters">
+                <label class="custom-control-label" for="shell">Shell</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="ios" name="filters">
+                <label class="custom-control-label" for="ios">ios</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="dbms" name="filters">
+                <label class="custom-control-label" for="dbms">DBMS</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="mathematics" name="filters">
+                <label class="custom-control-label" for="mathematics">Mathematics</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="frontend" name="filters">
+                <label class="custom-control-label" for="frontend">Frontend</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="design" name="filters">
+                <label class="custom-control-label" for="design">Design</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="testing" name="filters">
+                <label class="custom-control-label" for="testing">Testing</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="projectmanagement" name="filters">
+                <label class="custom-control-label" for="projectmanagement">Project Management</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="socialmediamanagement" name="filters">
+                <label class="custom-control-label" for="socialmediamanagement">Social Media Management</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="research" name="filters">
+                <label class="custom-control-label" for="research">Research</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="bigdata" name="filters">
+                <label class="custom-control-label" for="bigdata">Big Data</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="html" name="filters">
+                <label class="custom-control-label" for="html">HTML</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="css" name="filters">
+                <label class="custom-control-label" for="css">CSS</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="js" name="filters">
+                <label class="custom-control-label" for="js">JS</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="react" name="filters">
+                <label class="custom-control-label" for="react">React</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="benchmarking" name="filters">
+                <label class="custom-control-label" for="benchmarking">Benchmarking</label>
+            </div>
+        </form>
+    </aside>
+
+    <main id="cards-container">
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar1.png" alt="avatar">
+            <div class="details bg-light webdev python psychology">
+                <strong><i class="fas fa-user"></i> Name:</strong> Alex<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: alex@gmail.com">alex@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Web Dev, Python, Psychology<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar3.png" alt="avatar">
+            <div class="details bg-light devops gamedevelopment">
+                <strong><i class="fas fa-user"></i> Name:</strong> William<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: william@gmail.com">william@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>DevOps, Game Development<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar5.jpg" alt="avatar">
+            <div class="details bg-light java networking">
+                <strong><i class="fas fa-user"></i> Name:</strong> James<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: james@gmail.com">james@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Java, Networking<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar2.png" alt="avatar">
+            <div class="details bg-light datastructures programming shell ios">
+                <strong><i class="fas fa-user"></i> Name:</strong> Nina<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: nina@gmail.com">nina@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Data Structures, Programming, Shell, ios<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar5.jpg" alt="avatar">
+            <div class="details bg-light python psychology programming">
+                <strong><i class="fas fa-user"></i> Name:</strong> Evelyn<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: evelyn@gmail.com">evelyn@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Python, Psychology, Programming<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar1.png" alt="avatar">
+            <div class="details bg-light dbms mathematics frontend">
+                <strong><i class="fas fa-user"></i> Name:</strong> Ella<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: ella@gmail.com">ella@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>DBMS, Mathematics, Frontend<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar2.png" alt="avatar">
+            <div class="details bg-light webdev python psychology devops java">
+                <strong><i class="fas fa-user"></i> Name:</strong> Avery<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: avery@gmail.com">avery@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Web Dev, Python, Psychology, DevOps, Java<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar4.png" alt="avatar">
+            <div class="details bg-light gamedevelopment datastructures">
+                <strong><i class="fas fa-user"></i> Name:</strong> Jackson<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: jackson@gmail.com">jackson@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Game Development, Data Structures<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar1.png" alt="avatar">
+            <div class="details bg-light design testing">
+                <strong><i class="fas fa-user"></i> Name:</strong> Jack<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: jack@gmail.com">jack@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Design, Testing<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar2.png" alt="avatar">
+            <div class="details bg-light projectmanagement socialmediamanagement">
+                <strong><i class="fas fa-user"></i> Name:</strong> Scarlett<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: scarlett@gmail.com">scarlett@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Project Management, Social Media Management<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar3.png" alt="avatar">
+            <div class="details bg-light research bigdata">
+                <strong><i class="fas fa-user"></i> Name:</strong> Finch<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: finch@gmail.com">finch@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Research, Big Data<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar4.png" alt="avatar">
+            <div class="details bg-light html css js react projectmanagement">
+                <strong><i class="fas fa-user"></i> Name:</strong> Mercer<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: mercer@gmail.com">mercer@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>HTML, CSS, JS, React, Project Management<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar5.jpg" alt="avatar">
+            <div class="details bg-light benchmarking operations scheduling design">
+                <strong><i class="fas fa-user"></i> Name:</strong> Johnson<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: johnson@gmail.com">johnson@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Benchmarking, Operations, Scheduling, Design<br>
+            </div>
+        </div>
+        <div class="cards">
+            <i id="tooltip" class="fa fa-info-circle" data-toggle="tooltip" data-placement="bottom"
+                title="I am a passionate teacher and love to handle the queries of my students. I am currently working in XYZ company."></i>
+            <img src="avatar1.png" alt="avatar">
+            <div class="details bg-light videocreation informationsecurity cybersecurity">
+                <strong><i class="fas fa-user"></i> Name:</strong> Singer<br>
+                <strong><i class="fas fa-envelope-open"></i> Email: </strong><a href="mailto: singer@gmail.com">singer@gmail.com</a><br>
+                <strong><i class="fas fa-user-cog"></i> Skills: </strong>Video Creation, Information Security, Cybersecurity<br>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
